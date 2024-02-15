@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DocuSeal</title>
+    <link rel="stylesheet" href="task.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <!-- <img src="seal_icon.svg" alt="Seal Icon" style="width: 40px; height: 40px;"> <h2>DocuSeal</h2> -->
+            <h1><i class="fas fa-shield-alt">  DocuSeal  </i></h1>
+
+        </div>
+        <div class="right-side">
+            <button class="upgrade-btn">Upgrade</button>
+            <span class="settings-field">Settings</span>
+           <br/>
+           <span class ="uploadBtn"><i class="fas fa-upload"></i> Upload</span>
+           <button id="createBtn" class="create-btn"><i class="fas fa-plus">  CREATE  </i></button>
+        </div>
+    </div>
+
+    <div class="upload-card">
+        <div class="card1" id="documentViewer"></div>
+        <div class="card">
+            <h2>Upload New Document</h2>
+            <div class="right">
+                <button id="uploadBtn">Upload New Document</button>
+                <input type="file" id="fileInput" style="display: none;">
+              </div>
+            </div>
+            
+          
+            <script src="script.js"></script>
+</body>
+</html>
