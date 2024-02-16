@@ -8,12 +8,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <div class="container">
+   
+
+            <div class="container">
+                <div id="left">
+                   <div class="list" draggable="true"><img src="icon.png">Sign</div>
+                   <div class="list" draggable="true"><img src="icon.png">text item</div>
+                   <div class="list" draggable="true"><img src="icon.png">image</div>
+                   <div class="list" draggable="true"><img src="icon.png">file</div>
+                </div>
+                <div id="right"></div>
+                   </div>
+
+
+
+                     <div class="container">
         <div class="left-side">
             <!-- <img src="seal_icon.svg" alt="Seal Icon" style="width: 40px; height: 40px;"> <h2>DocuSeal</h2> -->
             <h1><i class="fas fa-shield-alt">  DocuSeal  </i></h1>
 
         </div>
+
         <div class="right-side">
             <button class="upgrade-btn">Upgrade</button>
             <span class="settings-field">Settings</span>
@@ -27,13 +42,23 @@
         <div class="card1" id="documentViewer"></div>
         <div class="card">
             <h2>Upload New Document</h2>
-            <div class="right">
+            <div class="center">
                 <button id="uploadBtn">Upload New Document</button>
                 <input type="file" id="fileInput" style="display: none;">
               </div>
             </div>
-            
-          
+
+            <div id="pdfViewerContainer">
+                <canvas id="pdfViewer"></canvas>
+            </div>
+            <div id="draggableText" draggable="true">
+             Text
+            </div>
+            <div id="draggableSignature" draggable="true">
+        Signature
+            </div> 
+
+
             <script src="script.js"></script>
 </body>
 </html>
